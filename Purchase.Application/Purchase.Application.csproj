@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Queries\PurchaseHeaderQueries\**" />
+    <EmbeddedResource Remove="Queries\PurchaseHeaderQueries\**" />
+    <None Remove="Queries\PurchaseHeaderQueries\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Purchase.Domain\Purchase.Domain.csproj" />
+    <ProjectReference Include="..\Purchase.Infrastructure\Purchase.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

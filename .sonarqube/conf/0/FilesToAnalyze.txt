@@ -1,0 +1,3 @@
+﻿D:\Projects\IMS.Purchase\Purchase.Domain\Entities\BaseEntity.cs
+D:\Projects\IMS.Purchase\Purchase.Domain\Entities\PurchaseProducts.cs
+D:\Projects\IMS.Purchase\Purchase.Domain\Entities\Purchases.cs

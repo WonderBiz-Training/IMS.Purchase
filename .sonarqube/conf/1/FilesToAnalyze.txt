@@ -1,0 +1,7 @@
+﻿D:\Projects\IMS.Purchase\Purchase.Infrastructure\Data\PurchaseDbContext.cs
+D:\Projects\IMS.Purchase\Purchase.Infrastructure\Interfaces\IPurchaseProductsRepositories.cs
+D:\Projects\IMS.Purchase\Purchase.Infrastructure\Interfaces\IPurchasesRepositories.cs
+D:\Projects\IMS.Purchase\Purchase.Infrastructure\Interfaces\IRepositories.cs
+D:\Projects\IMS.Purchase\Purchase.Infrastructure\Repositories\PurchaseProductsRepositories.cs
+D:\Projects\IMS.Purchase\Purchase.Infrastructure\Repositories\PurchasesRepositories.cs
+D:\Projects\IMS.Purchase\Purchase.Infrastructure\Repositories\Repositories.cs
