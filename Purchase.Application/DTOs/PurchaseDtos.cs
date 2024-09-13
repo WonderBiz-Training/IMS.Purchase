@@ -4,7 +4,6 @@ namespace Purchase.Application.DTOs
 {
     public class PurchaseDtos
     {
-
         public record CreatePurchasesDto(
              string PurchaseCode,
              Guid VendorId,
