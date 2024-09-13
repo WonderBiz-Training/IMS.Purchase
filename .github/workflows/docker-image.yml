@@ -16,12 +16,12 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
     - name: Build Docker image
       run: |
-        IMAGE_TAG="atsapi:$(date +%s)"
-        docker build . --file ./ATS.API/Dockerfile --tag $IMAGE_TAG
+        IMAGE_TAG="purchaseapi:$(date +%s)"
+        docker build . --file ./Purchase.Api/Dockerfile --tag $IMAGE_TAG
         echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
 
     - name: Tag Docker image as latest
       run: |
-        docker tag ${{ env.IMAGE_TAG }} ${{ secrets.DOCKER_USERNAME }}/atsapi:latest
+        docker tag ${{ env.IMAGE_TAG }} ${{ secrets.DOCKER_USERNAME }}/purchaseapi:latest
     - name: Push Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/atsapi:latest
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/purchaseapi:latest
